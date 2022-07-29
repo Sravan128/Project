@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+import com.BusinessRequirements;
+
+public class App {
+	public static void details() {
+		System.out.println("Welcome to Virtual Key Repository");
+		System.out.println("This application is developed by :");
+		System.out.println("Name : Developer1");
+	}
+
+	public static void main(String[] args) {
+		App.details();
+		Scanner sn=new Scanner(System.in);
+		while(true){
+			
+			System.out.println("1. Display in ascending order \n2. Business level operations  \n3.Close the Application");
+			
+			System.out.println("Enter Your Choice : ");
+			int choice=sn.nextInt();
+			switch(choice) {
+			      case 1 : 
+			    	  break;
+			      case 2 : BusinessRequirements br=new BusinessRequirements();
+			                     br.operations();
+			    	  break;
+			      case 3 :System.out.println("Thank you");
+			    	  System.exit(0);
+			    default: System.out.println("Wrong option Entered! please enter correct option.");
+					    break;
+			}
+		}
+	}
+
+}

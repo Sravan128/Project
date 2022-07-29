@@ -1,0 +1,14 @@
+package bean;
+
+import java.io.File;
+public class FilesAscendingOrder {
+          public void ascendingorder() {
+        	
+				File fr=new File("C:\\Users\\kesava\\OneDrive\\Desktop\\Projects\\Phase1\\VirtualKey\\Files");
+				//ArrayList arrlist=new ArrayList();
+				String listoffiles[]=fr.list();
+				for(String str:listoffiles)
+				System.out.println(str);
+			
+          }
+}

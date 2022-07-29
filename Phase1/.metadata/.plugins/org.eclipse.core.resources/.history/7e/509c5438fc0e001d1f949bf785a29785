@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		Scanner sn=new Scanner(System.in);
+		while(true){
+			
+			System.out.println("1. Display in ascending order \n 2. Business level operations  \n3.Close the Application");
+			
+			System.out.println("Enter Your Choice : ");
+			int choice=sn.nextInt();
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+package bean;
+
+import java.io.File;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FilesAscendingOrder {
+          public void ascendingorder() {
+        	  try {
+				File fr=new File("C:\\Users\\kesava\\OneDrive\\Desktop\\Projects\\Phase1\\VirtualKey\\Files");
+				System.out.println(fr.list()); 
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+          }
+}
